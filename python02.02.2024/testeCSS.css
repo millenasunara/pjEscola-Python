@@ -1,0 +1,48 @@
+*{
+padding:0;
+margin:0;
+}
+body{
+background: linear-gradient(to bottom, #000000, #8f1414, #e50e0e, #000000);
+margin-top:20%;
+}
+form{
+margin-top:-110px;
+background:rgba(255,255,255, 0.7);
+padding:100px;
+text-align:center;
+margin-right:750px;
+margin-left:800px;
+border-radius:10%;
+}
+h2{
+font-size:30px;
+margin-top:-50px;
+text-align:center;
+}
+.button{
+padding:5px;
+border-radius:6px;
+border: none;
+width: 180px;
+margin-top:10px;
+background-color: #000000;
+color: white;
+}
+.button p{
+margin-top:10px;
+color: white;
+}
+.input-group{
+margin-top:10%;
+padding:20px;
+border-radius:10px;
+border: none;
+}
+a{
+color: black;
+text-decoration:none;
+}
+p{
+margin-top:20px;
+}

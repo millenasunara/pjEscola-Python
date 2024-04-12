@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Cadastrados</title>
+</head>
+<style>
+    body{
+        background-image: url('./fundo_cadastroSucesso.jpg');
+        background-size: cover;
+        backface-visibility: visible;
+        position: relative; /* Adicione isso para permitir o posicionamento do overlay */
+    }
+    /* Adicione um novo elemento para representar o overlay */
+    .overlay {
+    position: fixed; /* Altere para "fixed" para cobrir toda a janela de visualização */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    z-index: 2; /* Certifique-se de que o overlay esteja sobre o conteúdo */
+    }
+
+
+    .all-first {
+    position: relative;
+    display: flex;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-left: 60px;
+    z-index: 2; /* Certifique-se de que o conteúdo esteja acima do overlay */
+    }
+
+    .one {
+        
+        background-color: rgba(255, 255, 255, 0.856);
+        height: 300px;
+        width: 500px;
+        margin-top: 300px;
+        margin-left: 700px;
+        margin-right: -700px;
+        border-radius: 10px;
+    }
+    .one p{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="overlay"></div> <!-- Adicione o overlay aqui -->
+    <div class="all-first">
+        <div class="one">
+            <p>Dados Recebido Com Sucesso!!</p><br>
+        </div>
+    </div>
+</body>
+</html>

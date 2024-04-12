@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Atividade</title>
+</head>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('./fundo_cadastroAtividade.jpg');    
+  background-size: cover;
+  backface-visibility: visible;
+  position: relative; /* Adicione isso para permitir o posicionamento do overlay */
+}
+
+/* Adicione um novo elemento para representar o overlay */
+.overlay {
+  position: fixed; /* Altere para "fixed" para cobrir toda a janela de visualização */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+  z-index: 2; /* Certifique-se de que o overlay esteja sobre o conteúdo */
+}
+
+
+form {
+  margin-top: 110px;
+  background: white;
+  padding: 90px;
+  text-align: center;
+  margin-right: 750px;
+  margin-left: 800px;
+  border-radius: 5%;
+  width: 200px;
+  z-index: 2;
+  position: relative;
+}
+
+h1 {
+  font-size: 40px; /* Aumentei o tamanho do texto */
+  margin-top: -30px; /* Movi o título um pouco para cima */
+  text-align: center;
+}
+
+.button {
+  padding: 13px; /* Aumentei o preenchimento do botão */
+  border-radius: 10px; /* Tornando o botão mais redondo */
+  border: none;
+  width: 228px; /* Aumentei a largura do botão */
+  margin-top: 20px; /* Ajustei a margem superior */
+  background-color: #5a3fa3;
+  color: white;
+}
+
+.button p {
+  margin-top: 10px;
+  color: white;
+}
+
+.input-group {
+  margin-left: -10%;
+  margin-top: 10%;
+  padding: 20px;
+  border-radius: 5px; /* Tornando os inputs mais redondos */
+  border: none;
+}
+
+input[type="number"],
+input[type="text"]{
+  width: 200px; /* Aumentando a largura dos inputs */
+  padding: 10px; /* Aumentando o preenchimento dos inputs */
+  border-radius: 10px; /* Tornando os inputs mais redondos */
+  background-color: #cccccc70; /* Cor cinza */
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+
+p {
+  margin-top: 20px;
+}
+</style>
+<body>
+<div class="overlay"></div>
+<div class="error-message">
+  <!-- Mensagem de erro será inserida aqui -->
+</div>
+<form action="/confirmar_cadastroAtividade" method="post">
+  <h1>Cadastro de Atividade</h1>
+  <!--<div class="welcome-message">
+	{welcome_message}
+  </div>-->
+  <div class="input-group">
+    <label for="codigo">Código:</label>
+    <input type="number" name="codigo" id="codigo" placeholder="Digite o código da turma" required>
+  </div>
+
+  <div class="input-group">
+    <label for="descricao">Descrição:</label>
+    <input type="text" name="descricao" id="descricao" placeholder="Digite a sua descrição" required>
+  </div>
+
+  <div class="input-group">
+    <button class="button">Cadastrar</button>
+  </div>
+</form>
+</body>
+</html>
